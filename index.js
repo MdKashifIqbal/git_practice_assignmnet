@@ -1,11 +1,14 @@
 // Problem 1 : Check whether a number is Prime or not
-function PrimeNum(a){
-let count=1;
-for(let i=0;i<=a;i++){
-  if(a%i==0){count++}
-}
-if(count==4){console.log("Its a Prime Number")}
-else{console.log("Its not a Prime Numeber")}
+
+
+function primeNum(a){
+  let count  = 0;
+  for(let i = 2; i<=a; i++){
+    if(a%i== 0){
+      count++;
+    }
+  }
+  (count ==1)?console.log("It's a Prime number"):console.log("Not a prime number");
 }
 
-PrimeNum(19)
+primeNum(19);
